@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="page">
+        <header>
+          <nav class="nav">
+            <a href="https://www.w3.org/" class="nav-img-link">
+              <img src="./assets/images/logo.svg" alt="News home" />
+            </a>
+
+            <button
+              type="button"
+              class="nav-menu-btn"
+              onclick="toggleMobileNavigationMenu()"
+            >
+              <img
+                src="./assets/images/icon-menu.svg"
+                alt="Open navigation links"
+              />
+            </button>
+
+            <div class="nav-mobile-sidebar" id="nav-mobile-sidebar">
+              <div class="nav-mobile-sidebar-close-wrapper">
+                <button
+                  class="nav-mobile-sidebar-close-button"
+                  onclick="toggleMobileNavigationMenu()"
+                >
+                  <img
+                    src="./assets/images/icon-menu-close.svg"
+                    alt="Close navigation links"
+                  />
+                </button>
+              </div>
+
+              <ul class="nav-list-mobile" onclick="onNavListMobileClick(event)">
+                <li aria-current="page" class="nav-list-mobile-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="nav-list-mobile-item">
+                  <a href="#">New</a>
+                </li>
+                <li class="nav-list-mobile-item">
+                  <a href="#">Popular</a>
+                </li>
+                <li class="nav-list-mobile-item">
+                  <a href="#">Trending</a>
+                </li>
+                <li class="nav-list-mobile-item">
+                  <a href="#">Categories</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="nav-mobile-sidebar-backdrop"
+              id="nav-mobile-sidebar-backdrop"
+              onclick="toggleMobileNavigationMenu()"
+            ></div>
+
+            <ul class="nav-list">
+              <li aria-current="page" class="nav-list-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#">New</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#">Popular</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#">Trending</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#">Categories</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="content-wrapper">
+          <section class="main-section">
+            <article class="main-news-item">
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                class="main-news-item-img"
+                alt=""
+              />
+              <section class="main-news-item-section">
+                <h1 class="main-news-item-heading">
+                  The Bright Future of Web 3.0?
+                </h1>
+                <div class="main-news-item-contents">
+                  <p class="main-news-item-contents-excerpt">
+                    We dive into the next evolution of the web that claims to
+                    put the power of the platforms back into the hands of the
+                    people. But is it really fulfilling its promise?
+                  </p>
+                  <div>
+                    <button class="main-news-item-contents-read-more-btn">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </article>
+            <aside class="new-items">
+              <h1 class="new-items-heading">New</h1>
+              <article class="new-item">
+                <h1 class="new-item-heading">
+                  <a class="new-item-heading-link" href="#" target="_blank">
+                    Hydrogen VS Electric Cars
+                  </a>
+                </h1>
+                <p class="new-item-description">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </article>
+              <hr class="new-items-separator" />
+              <article class="new-item">
+                <h1 class="new-item-heading">
+                  <a class="new-item-heading-link" href="#" target="_blank">
+                    The Downsides of AI Artistry
+                  </a>
+                </h1>
+                <p class="new-item-description">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+              <hr class="new-items-separator" />
+              <article class="new-item">
+                <h1 class="new-item-heading">
+                  <a class="new-item-heading-link" href="#" target="_blank">
+                    Is VC Funding Drying Up?
+                  </a>
+                </h1>
+                <p class="new-item-description">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </aside>
+          </section>
+
+          <section class="articles-section">
+            <article class="article-wrapper">
+              <img
+                class="article-img"
+                src="./assets/images/image-retro-pcs.jpg"
+                alt=""
+              />
+              <div class="article-content">
+                <p class="article-number">01</p>
+                <h1 class="article-heading">
+                  <a class="article-heading-link" href="#" target="_blank">
+                    Reviving Retro PCs
+                  </a>
+                </h1>
+                <p class="article-description">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </article>
+            <article class="article-wrapper">
+              <img
+                class="article-img"
+                src="./assets/images/image-top-laptops.jpg"
+                alt=""
+              />
+              <div class="article-content">
+                <p class="article-number">02</p>
+                <h1 class="article-heading">
+                  <a class="article-heading-link" href="#" target="_blank">
+                    Top 10 Laptops of 2022
+                  </a>
+                </h1>
+                <p class="article-description">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </article>
+            <article class="article-wrapper">
+              <img
+                class="article-img"
+                src="./assets/images/image-gaming-growth.jpg"
+                alt=""
+              />
+              <div class="article-content">
+                <p class="article-number">03</p>
+                <h1 class="article-heading">
+                  <a class="article-heading-link" href="#" target="_blank">
+                    The Growth of Gaming
+                  </a>
+                </h1>
+                <p class="article-description">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </article>
+          </section>
+        </main>
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://leonpahole.com" target="_blank">Leon Pahole</a>.
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
