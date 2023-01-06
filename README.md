@@ -20,7 +20,7 @@ Open `index.html`.
 ### Links
 
 - Solution URL: [GitHub](https://github.com/leonpahole/fm-news-homepage-website)
-- Live Site URL: []()
+- Live Site URL: [https://63b7af4c24bca370889ea123--silly-blancmange-c4bb54.netlify.app/](https://63b7af4c24bca370889ea123--silly-blancmange-c4bb54.netlify.app/)
 
 ## Author
 
